@@ -1,4 +1,3 @@
-
 <img width="361" height="249" alt="wareflow_logo" src="https://github.com/user-attachments/assets/aafe0697-7f24-41db-a516-d992057c71aa" />
 
 --- 
@@ -32,7 +31,7 @@ including **Item Name / Number**, a **description** and **stock quantity** for e
 
 ---
 
-Adding / Updating an item screen allows the user to add or modify an item. Here they need to add an Item Number, Description and initial inventory quanity.
+Adding / Updating an item screen allows the user to add or modify an item. Here they need to add an Item Number, Description and initial inventory quantity.
 
 <img width="356" height="750" alt="image" src="https://github.com/user-attachments/assets/279b2d9e-0825-4c23-8e08-3062f878b1d8" /> <br>
 
@@ -51,7 +50,7 @@ From anywhere in the app, users can navigate from the three dot menu bar on the 
 
 ---
 
-Throughout testing each feature, I kept thinking as a user. The "what if I wanted to do..." was always in the forfront of my thinking as I was testing each screen.
+Throughout testing each feature, I kept thinking as a user. The "what if I wanted to do..." was always in the forefront of my thinking as I was testing each screen.
 Thinking as a user helps to identify any pitfalls that may come up. For instance, when a user adds a new item if the fields remained populated, the user would be 
 unsure if the item was actually added. Even with a prompt, clearing the fields and putting the cursor back to the Item field gave a better sense of success. <br>
 
@@ -63,27 +62,27 @@ Coming from a background in UI design, mostly in Eclipse WindowBuilder, I unders
 
 That being said, this app I had to take a different approach. Once I understood what screens I needed, and the layouts were set I worked on creating the activities for each layout.<br>
 
-I created one activity at a time. Made sure I had all the controls and functions I needed for aech. Once I was happy with the base functionality, I started putting together the Intent calls for each activity.
+I created one activity at a time. Made sure I had all the controls and functions I needed for each. Once I was happy with the base functionality, I started putting together the Intent calls for each activity.
 That way I knew each activity worked independently. I apply this rule today with incremental coding. I'll generate a small series of logic and test to make sure it works. So when things go belly up, it'll be a 
 smaller set of code to check rather than trying to debug an entire program.
 
 # Functional Testing
 
 For each major function in the activities, I ran it through the emulator. I ran several tests for each activity trying to think of all the edge cases that could come up. Like if a user is trying to delete an item but enters a 
-part number that doesnt exists. Or enters no part number at all. Doing this in an incremental way worked the best for me. <br>
+part number that doesn't exists. Or enters no part number at all. Doing this in an incremental way worked the best for me. <br>
 
-I also leaned on LogCat for a lot of the debugging. It helped to have a live stream of what the app was doing and where it was failiing. Even when the app didn't look like it was faliing on the emulator. 
+I also leaned on LogCat for a lot of the debugging. It helped to have a live stream of what the app was doing and where it was failing. Even when the app didn't look like it was failing on the emulator. 
 
 # Overcoming Challenges
 
 On a UI standpoint, one of the bigger challenges was getting the WYSIWYG from Android Studio to the phone. I had to understand where Themes would override background colors and tints. <br>
 
 For coding, the Recycler View was a challenge to understand and get to work. Just displaying the text in the View was not the challenge, it was when I added the Edit button for each row. I needed to find a way that 
-referenced each row as an object that containied each field to call back on the next activity. 
+referenced each row as an object that contained each field to call back on the next activity. 
 
 # Showcase
 
-The login screen was one of the pieces that I feel has a strong working logic behind it. There were a lot of schenerios to consider when a user is first faced with the app. 
+The login screen was one of the pieces that I feel has a strong working logic behind it. There were a lot of scenarios to consider when a user is first faced with the app. 
 
 - Do they have an existing account?
 - Have they entered the right password?
@@ -91,5 +90,3 @@ The login screen was one of the pieces that I feel has a strong working logic be
 
 These are some of the same types of checks we do today, where its checking security tables to make sure users have access to run a particular program or report. <br>
 User validation is a big part of my world, so this piece came natural (other than storing passwords in plain text :) )
-
-
